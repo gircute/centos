@@ -1,0 +1,27 @@
+== Build Docker Images for CentOS with SSH Access
+
+This repository is obsolete.
+Use kinogmt/centos-ssh.git instead.
+
+=== Dockerfile
+
+https://github.com/kinogmt/docker-containers/blob/master/centos-ssh/Dockerfile[Dockerfile]
+
+=== Build
+Run following command in the directory with Dockerfile above.
+
+-----------------------------
+% docker build -t centos-ssh .
+-----------------------------
+
+=== Run
+
+==== Start one container simply using docker run command
+
+-----------------------------
+ % docker run -d -h c1 --name c1
+-----------------------------
+
+==== Start multiple containers using docker-compose command
+
+See https://github.com/kinogmt/docker-containers/blob/master/centos-ssh/compose.adoc[here].
